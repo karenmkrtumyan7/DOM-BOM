@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#sweeties {
+    list-style-type: none;
+}
+
+#sweeties li {
+    margin-left: 20px;
+}
+
+.open::before {
+    content: "▼";
+    color: green;
+}
+
+.close::before {
+    content: "▶";
+    color: green;
+}
+
+#heading {
+    cursor: pointer;
+}
