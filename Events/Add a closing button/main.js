@@ -9,6 +9,9 @@ Array.from(document.getElementsByClassName('pane')).forEach((el) => {
     button.style.position = 'absolute';
     button.style.top = "5px";
     button.style.right = "10px";
-    button.addEventListener('click', deletePane)
     el.appendChild(button);
+});
+
+container.addEventListener('click', (event) => {
+    event.target.parentElement.remove();
 })
